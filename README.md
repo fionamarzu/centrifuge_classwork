@@ -3,6 +3,7 @@
 pragma solidity ^0.8.0;
 
 // Contrato base
+
 contract CentrifugeBase {
     address public owner;
     uint public totalValueLocked;
