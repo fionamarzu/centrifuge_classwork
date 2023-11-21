@@ -45,10 +45,10 @@ contract Centrifuge is CentrifugeBase {
     }
 }
 
-//Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Aquí hay un ejemplo muy simplificado para ilustrar cómo podrías estructurar un contrato que herede de una base llamada CentrifugeBase
-//es el contrato base, CentrifugeBase. 
+Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Aquí hay un ejemplo muy simplificado para ilustrar cómo podrías estructurar un contrato que herede de una base llamada CentrifugeBase
+Este es el contrato base, CentrifugeBase. 
 
-//Variables de Estado:
+Variables de Estado:
 
 owner: Es la dirección del propietario del contrato, establecido en el constructor.
 totalValueLocked: Rastrea el valor total bloqueado en el contrato.
@@ -65,6 +65,25 @@ Funciones:
 
 tokenizeAsset(uint _value): Permite al propietario tokenizar un activo y aumenta totalValueLocked.
 withdrawFunds(): Permite al propietario retirar los fondos acumulados en el contrato.
+
+Este es el contrato derivado, Centrifuge, que hereda de CentrifugeBase. 
+Aquí está lo que hace:
+
+Variables y Funciones Adicionales:
+
+Puede tener sus propias variables y funciones específicas. En este caso, no hay ninguna en el código de ejemplo, pero podrían añadirse según las necesidades de Centrifuge.
+Evento Específico:
+
+LoanFunded: Es un evento específico de Centrifuge que se emite cuando se financia un préstamo.
+Función Específica:
+
+fundLoan(address _borrower, uint _amount): Una función específica de Centrifuge que permite al propietario financiar un préstamo. En este caso, simplemente emite el evento LoanFunded.
+En resumen, Centrifuge hereda todas las características y funcionalidades de CentrifugeBase y puede añadir su propia lógica específica, como la financiación de préstamos. La herencia permite organizar y reutilizar código de manera efectiva.
+
+
+
+
+
 
 
 
