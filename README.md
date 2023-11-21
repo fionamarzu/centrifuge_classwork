@@ -45,7 +45,7 @@ contract Centrifuge is CentrifugeBase {
     }
 }
 
-Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Aquí hay un ejemplo muy simplificado para ilustrar cómo podrías estructurar un contrato que herede de una base llamada CentrifugeBase
+Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Acá hay un ejemplo  para ilustrar cómo sería estructurar un contrato que herede de una base llamada CentrifugeBase
 Este es el contrato base, CentrifugeBase. 
 
 Variables de Estado:
