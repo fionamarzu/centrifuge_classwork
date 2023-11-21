@@ -30,7 +30,7 @@ contract CentrifugeBase {
         payable(owner).transfer(address(this).balance);
     }
 }
-
+Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Acá hay un ejemplo  para ilustrar cómo sería estructurar un contrato que herede de una base llamada CentrifugeBase
 // Contrato derivado que utiliza herencia
 contract Centrifuge is CentrifugeBase {
     // Variables y funciones específicas de Centrifuge
@@ -45,8 +45,8 @@ contract Centrifuge is CentrifugeBase {
     }
 }
 
-Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Acá hay un ejemplo  para ilustrar cómo sería estructurar un contrato que herede de una base llamada CentrifugeBase
-Este es el contrato base, CentrifugeBase. 
+
+Este es el contrato base, CentrifugeBase explicamos paso a paso lo que hace el codigo: 
 
 Variables de Estado:
 
@@ -70,9 +70,6 @@ Este es el contrato derivado, Centrifuge, que hereda de CentrifugeBase.
 Aquí está lo que hace:
 
 Variables y Funciones Adicionales:
-
-Puede tener sus propias variables y funciones específicas. En este caso, no hay ninguna en el código de ejemplo, pero podrían añadirse según las necesidades de Centrifuge.
-Evento Específico:
 
 LoanFunded: Es un evento específico de Centrifuge que se emite cuando se financia un préstamo.
 Función Específica:
