@@ -19,28 +19,25 @@ contract CentrifugeBase {
     }
 
     function tokenizeAsset(uint _value) external onlyOwner {
-        // Lógica para tokenizar un activo (simplificado)
         totalValueLocked += _value;
 
         emit AssetTokenized(msg.sender, _value);
     }
 
     function withdrawFunds() external onlyOwner {
-        // Lógica para retirar fondos (simplificado)
         payable(owner).transfer(address(this).balance);
     }
 }
-Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de activos del mundo real. Acá hay un ejemplo  para ilustrar cómo sería estructurar un contrato que herede de una base llamada CentrifugeBase
-// Contrato derivado que utiliza herencia
-contract Centrifuge is CentrifugeBase {
-    // Variables y funciones específicas de Centrifuge
+Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de RWA. Acá hay un ejemplo  para ilustrar cómo sería estructurar un contrato que herede de una base llamada CentrifugeBase
 
-    // Evento específico de Centrifuge
+
+contract Centrifuge is CentrifugeBase {
+
     event LoanFunded(address indexed borrower, uint amount);
 
-    // Función específica de Centrifuge
+
     function fundLoan(address _borrower, uint _amount) external onlyOwner {
-        // Lógica para financiar un préstamo (simplificado)
+
         emit LoanFunded(_borrower, _amount);
     }
 }
