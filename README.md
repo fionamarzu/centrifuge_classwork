@@ -42,7 +42,7 @@ Un contrato que utilice herencia podría estar diseñado para gestionar la token
 }
 
 
-Este es el contrato base, CentrifugeBase explicamos paso a paso lo que hace el codigo: 
+Anexo explicando el funcionamiento del codigo
 
 Variables de Estado:
 
