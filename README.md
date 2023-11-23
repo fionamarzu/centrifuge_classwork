@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract CentrifugeBase {
+    contract CentrifugeBase {
     address public owner;
     uint public totalValueLocked;
 
@@ -30,7 +30,7 @@ contract CentrifugeBase {
 Un contrato que utilice herencia podría estar diseñado para gestionar la tokenización y el manejo de RWA. Acá hay un ejemplo  para ilustrar cómo sería estructurar un contrato que herede de una base llamada CentrifugeBase
 
 
-contract Centrifuge is CentrifugeBase {
+    contract Centrifuge is CentrifugeBase {
 
     event LoanFunded(address indexed borrower, uint amount);
 
