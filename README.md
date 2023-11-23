@@ -54,9 +54,7 @@ AssetTokenized: Se emite cuando se tokeniza un activo. Al tokenizar un activo, e
 Modificador:
 
 onlyOwner: Un modificador que restringe ciertas funciones solo al propietario del contrato.
-Constructor:
-
-Establece al desplegar el contrato que el que lo desplegó es el propietario.
+Constructor: Establece al desplegar el contrato que el que lo desplegó es el propietario.
 Funciones:
 
 tokenizeAsset(uint _value): Permite al propietario tokenizar un activo y aumenta totalValueLocked.
